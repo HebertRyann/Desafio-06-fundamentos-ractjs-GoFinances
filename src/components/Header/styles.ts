@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 interface ContainerProps {
   size?: 'small' | 'large';
@@ -28,7 +28,14 @@ export const Container = styled.div<ContainerProps>`
         }
 
         &:hover {
+          border-bottom: 1px solid #ff872c;
+          padding-bottom: 5px;
           opacity: 0.6;
+        }
+
+        &:focus {
+          border-bottom: 1px solid #ff0000;
+          padding-bottom: 5px;
         }
       }
     }
